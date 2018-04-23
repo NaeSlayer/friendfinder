@@ -15,4 +15,4 @@ var friends = [{
     ]
 }]
 
-module.exports = Friends;
+module.exports = friends;
