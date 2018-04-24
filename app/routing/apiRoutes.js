@@ -45,9 +45,9 @@ module.exports = function (app) {
         friends.push(newFriend);
 
         res.json(mostCompatibleFriend);
-        console.log("friend" + JSON.stringify(mostCompatibleFriend));
-        console.log("friend" + mostCompatibleFriend.name);
-        console.log("difference" + difference);
+        console.log("friend " + JSON.stringify(mostCompatibleFriend));
+        console.log("friend " + mostCompatibleFriend.name);
+        console.log("difference " + difference);
 
 
 

@@ -17,19 +17,7 @@ require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
 
 
-// $("#submit").on("click", function (event) {
-//     event.preventDefault();
-//     $(".modal").modal("show");
-// if (inputValidator($("#city-input").val()) === true) {
-//     getInputs("city.html");
-// } else $(".modal").modal("show")
-// })
 
-
-// function inputValidator(html) {
-//     return /^[A-Za-z ]+$/.test(html);
-
-// }
 
 
 
