@@ -3,14 +3,6 @@
 
 <head>
     <title>Survey Questions</title>
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-        crossorigin="anonymous"> -->
-
 
     <!-- Latest compiled and minified JavaScript -->
 
@@ -157,8 +149,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p class="friend-name"></p>
-                    <p class="friend-photo"></p>
+                    <p id="friend-name"></p>
+                    <img id="friend-photo"></img>
                 </div>
                 <div class="modal-footer">
 
@@ -213,8 +205,8 @@
                 $.post("/api/friends", newFriend, function (data) {
                     console.log("survey.html", data);
                     // alert("Adding friend...");
-                    $(".friend-name").text("You are most compatible with " + data.name);
-                    $(".friend-photo").attr("src", data.photo);
+                    $("#friend-name").text("You are most compatible with " + data.name);
+                    $("#friend-photo").attr("src", data.photo);
                     // alert("You are most compatible with " + data.name);
                 });
                 $(".results-modal").modal("show")
