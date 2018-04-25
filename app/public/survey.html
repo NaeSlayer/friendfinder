@@ -157,7 +157,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Please enter a job keyword.</p>
+                    <p class="friend-name"></p>
+                    <p class="friend-photo"></p>
                 </div>
                 <div class="modal-footer">
 
@@ -168,6 +169,9 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 
 
     <script type="text/javascript">
@@ -209,9 +213,11 @@
                 $.post("/api/friends", newFriend, function (data) {
                     console.log("survey.html", data);
                     // alert("Adding friend...");
-                    alert("You are most compatible with " + data.name);
+                    $(".friend-name").text("You are most compatible with " + data.name);
+                    $(".friend-photo").attr("src", data.photo);
+                    // alert("You are most compatible with " + data.name);
                 });
-                // $(".results-modal").modal("show")
+                $(".results-modal").modal("show")
 
             } else {
                 alert("Please fill out all fields")

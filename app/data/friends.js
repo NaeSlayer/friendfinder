@@ -7,7 +7,7 @@ var friends = [{
     },
     {
         "name": "Jim",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://www.google.com/imgres?imgurl=https%3A%2F%2Faz616578.vo.msecnd.net%2Ffiles%2F2016%2F03%2F04%2F635927223188301534-622930799_JIM.png&imgrefurl=http%3A%2F%2Fwww.dailyedge.ie%2Fjim-the-us-office-3576726-Sep2017%2F&docid=9jeDdknNg8C-TM&tbnid=aAH06NI_YkktnM%3A&vet=10ahUKEwjSscvmodTaAhVV12MKHeWeBFsQMwjIASgCMAI..i&w=1024&h=576&bih=590&biw=1280&q=the%20office%20jim&ved=0ahUKEwjSscvmodTaAhVV12MKHeWeBFsQMwjIASgCMAI&iact=mrc&uact=8",
         "scores": [
             4, 4, 4, 1, 4, 1, 3, 3, 3, 4
         ]
