@@ -1,0 +1,17 @@
+/* .color { */
+
+/* background: blueviolet
+} */
+
+.jumbotron {
+    background-image: url('assets/images/friends.jpg');
+    background: blue
+}
+
+.body {
+    background: blue
+}
+
+h1 {
+    color: blue
+}
